@@ -58,28 +58,7 @@ void Search_word(string str)
         }
     }
 }
-void Judge_ifelse()
-{
-    if(p_if == true && p_else == false)//Only if in line, mark if
-    {
-        mark_if = true;
-    }
-    if(p_if == false && p_else == true)//Only else in line, if-else +1
-    {
-        count_ifelse ++;
-    }
-    if(p_if == true && p_else == true)//If "else if" in one line ,if-else-if +1, if-else -1
-    {
-        if(mark_if == true)
-        {
-            count_ifelse --;
-            count_ifelseif ++;
-            mark_if = false;
-        }
-    }
-    p_if = false;
-    p_else = false;
-}
+
 //Output the results
 void PrintResult()
 {
