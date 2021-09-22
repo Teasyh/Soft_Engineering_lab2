@@ -140,7 +140,7 @@ int main()
     }
     else
     {
-        
+        cout << "The file was not successfully opened" << endl;
         return -1;
     }
     //output the results
